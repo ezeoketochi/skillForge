@@ -95,6 +95,11 @@ const programData = {
   },
 }
 
+// ✅ This tells Next which `[id]` pages to build
+export async function generateStaticParams() {
+  return Object.keys(programData).map((id) => ({ id }));
+}
+
 export default function ProgramDetailPage({ params }: { params: { id: string } }) {
   const program = programData[params.id as keyof typeof programData]
 
