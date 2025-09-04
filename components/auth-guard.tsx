@@ -10,7 +10,7 @@ interface AuthGuardProps {
   requireAuth?: boolean
 }
 
-export function AuthGuard({ children, requireAuth = true }: AuthGuardProps) {
+export function AuthGuard({ children, requireAuth = false }: AuthGuardProps) {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null)
   const router = useRouter()
 

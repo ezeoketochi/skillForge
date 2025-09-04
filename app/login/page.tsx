@@ -1,11 +1,17 @@
+'use client'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Award, ArrowLeft } from "lucide-react"
 import Link from "next/link"
+import { useRouter } from 'next/navigation';
+
 
 export default function LoginPage() {
+  const router = useRouter();
+
+
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <div className="w-full max-w-md">
@@ -32,21 +38,21 @@ export default function LoginPage() {
             <CardDescription>Enter your credentials to access your account</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            <form className="space-y-4">
+            <form onSubmit={(e) => { e.preventDefault(), router.push('/dashboard')}}>
               <div className="space-y-2">
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="Enter your email" required />
+                <Input id="email"  placeholder="Enter your email"  />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="password">Password</Label>
-                <Input id="password" type="password" placeholder="Enter your password" required />
+                <Input id="password" type="password" placeholder="Enter your password"  />
               </div>
               <div className="flex items-center justify-between">
                 <Link href="/forgot-password" className="text-sm text-secondary hover:underline">
                   Forgot password?
                 </Link>
               </div>
-              <Button type="submit" className="w-full">
+              <Button  type="submit" className="w-full">
                 Sign In
               </Button>
             </form>
@@ -62,6 +68,6 @@ export default function LoginPage() {
           </CardContent>
         </Card>
       </div>
-    </div>
+    </div >
   )
 }
