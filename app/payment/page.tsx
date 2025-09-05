@@ -22,7 +22,7 @@ export default function PaymentPage() {
                 </div>
                 <span className="text-xl font-bold text-foreground">SkillForge</span>
               </Link>
-              <Link href="/dashboard" className="flex items-center text-muted-foreground hover:text-foreground">
+              <Link href="/dashboard" className="flex items-center  hover:text-foreground">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Dashboard
               </Link>
@@ -35,7 +35,7 @@ export default function PaymentPage() {
             {/* Header */}
             <div className="text-center mb-8">
               <h1 className="text-3xl font-bold mb-2">Complete Your Payment</h1>
-              <p className="text-muted-foreground">
+              <p className="">
                 Secure your access to all SkillForge programs with our annual membership
               </p>
             </div>
@@ -56,7 +56,7 @@ export default function PaymentPage() {
                         <CreditCard className="w-5 h-5 text-secondary" />
                         <Label htmlFor="card" className="flex-1 cursor-pointer">
                           <div className="font-medium">Credit or Debit Card</div>
-                          <div className="text-sm text-muted-foreground">Visa, Mastercard, American Express</div>
+                          <div className="text-sm ">Visa, Mastercard, American Express</div>
                         </Label>
                       </div>
                       <div className="flex items-center space-x-3 p-4 border border-border rounded-lg hover:border-secondary/50 transition-colors">
@@ -66,7 +66,7 @@ export default function PaymentPage() {
                         </div>
                         <Label htmlFor="paypal" className="flex-1 cursor-pointer">
                           <div className="font-medium">PayPal</div>
-                          <div className="text-sm text-muted-foreground">Pay with your PayPal account</div>
+                          <div className="text-sm">Pay with your PayPal account</div>
                         </Label>
                       </div>
                       <div className="flex items-center space-x-3 p-4 border border-border rounded-lg hover:border-secondary/50 transition-colors">
@@ -74,7 +74,7 @@ export default function PaymentPage() {
                         <Smartphone className="w-5 h-5 text-secondary" />
                         <Label htmlFor="apple" className="flex-1 cursor-pointer">
                           <div className="font-medium">Apple Pay</div>
-                          <div className="text-sm text-muted-foreground">Quick and secure payment</div>
+                          <div className="text-sm ">Quick and secure payment</div>
                         </Label>
                       </div>
                       <div className="flex items-center space-x-3 p-4 border border-border rounded-lg hover:border-secondary/50 transition-colors">
@@ -82,7 +82,7 @@ export default function PaymentPage() {
                         <Building className="w-5 h-5 text-secondary" />
                         <Label htmlFor="bank" className="flex-1 cursor-pointer">
                           <div className="font-medium">Bank Transfer</div>
-                          <div className="text-sm text-muted-foreground">Direct bank account transfer</div>
+                          <div className="text-sm ">Direct bank account transfer</div>
                         </Label>
                       </div>
                     </RadioGroup>
@@ -163,7 +163,7 @@ export default function PaymentPage() {
                       <span>SkillForge Annual Membership</span>
                       <span>$30.00</span>
                     </div>
-                    <div className="flex justify-between text-sm text-muted-foreground">
+                    <div className="flex justify-between text-sm ">
                       <span>Processing Fee</span>
                       <span>$0.00</span>
                     </div>
@@ -210,7 +210,7 @@ export default function PaymentPage() {
                 {/* Security Notice */}
                 <Card>
                   <CardContent className="pt-6">
-                    <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                    <div className="flex items-center space-x-2 text-sm ">
                       <Shield className="w-4 h-4" />
                       <span>Your payment is secured with 256-bit SSL encryption</span>
                     </div>

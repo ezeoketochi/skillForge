@@ -19,16 +19,16 @@ export default function LandingPage() {
               <span className="text-xl font-bold text-foreground">SkillForge</span>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
-              <Link href="#programs" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="#programs" className=" hover:text-foreground transition-colors">
                 Programs
               </Link>
-              <Link href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="#how-it-works" className=" hover:text-foreground transition-colors">
                 How It Works
               </Link>
-              <Link href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="#pricing" className=" hover:text-foreground transition-colors">
                 Pricing
               </Link>
-              <Link href="/login" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="/login" className=" hover:text-foreground transition-colors">
                 Sign In
               </Link>
               <Button asChild>
@@ -50,7 +50,7 @@ export default function LandingPage() {
               <h1 className="text-4xl lg:text-6xl font-bold text-balance mb-6">
                 Master New Skills Through <span className="text-secondary">Structured Apprenticeships</span>
               </h1>
-              <p className="text-xl text-muted-foreground text-balance mb-8">
+              <p className="text-xl text-balance mb-8">
                 Join thousands of professionals advancing their careers through our comprehensive apprenticeship
                 programs. Learn from industry experts and build real-world skills.
               </p>
@@ -78,11 +78,11 @@ export default function LandingPage() {
               </div>
               <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-lg p-4 shadow-lg">
                 <div className="text-2xl font-bold text-secondary">5,000+</div>
-                <div className="text-sm text-muted-foreground">Active Learners</div>
+                <div className="text-sm ">Active Learners</div>
               </div>
               <div className="absolute -top-6 -right-6 bg-card border border-border rounded-lg p-4 shadow-lg">
                 <div className="text-2xl font-bold text-secondary">95%</div>
-                <div className="text-sm text-muted-foreground">Success Rate</div>
+                <div className="text-sm ">Success Rate</div>
               </div>
             </div>
           </div>
@@ -95,15 +95,15 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-secondary mb-2">5,000+</div>
-              <div className="text-muted-foreground">Active Apprentices</div>
+              <div className="">Active Apprentices</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-secondary mb-2">50+</div>
-              <div className="text-muted-foreground">Skill Programs</div>
+              <div className="">Skill Programs</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-secondary mb-2">95%</div>
-              <div className="text-muted-foreground">Completion Rate</div>
+              <div className="">Completion Rate</div>
             </div>
           </div>
         </div>
@@ -114,7 +114,7 @@ export default function LandingPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Why Choose SkillForge?</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl max-w-2xl mx-auto">
               Our platform combines structured learning with real-world application to accelerate your professional
               growth.
             </p>
@@ -229,7 +229,7 @@ export default function LandingPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">How It Works</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl max-w-2xl mx-auto">
               Get started in minutes and begin your journey to professional excellence.
             </p>
           </div>
@@ -251,7 +251,7 @@ export default function LandingPage() {
                 </div>
               </div>
               <h3 className="text-lg font-semibold mb-2">Register & Verify</h3>
-              <p className="text-muted-foreground">
+              <p className="">
                 Create your account, verify your phone, and upload your ID for security.
               </p>
             </div>
@@ -272,7 +272,7 @@ export default function LandingPage() {
                 </div>
               </div>
               <h3 className="text-lg font-semibold mb-2">Choose Your Path</h3>
-              <p className="text-muted-foreground">
+              <p className="">
                 Select from our diverse range of skill programs that match your interests.
               </p>
             </div>
@@ -293,7 +293,7 @@ export default function LandingPage() {
                 </div>
               </div>
               <h3 className="text-lg font-semibold mb-2">Make Payment</h3>
-              <p className="text-muted-foreground">
+              <p className="">
                 Secure your spot with our affordable $30 annual fee using multiple payment options.
               </p>
             </div>
@@ -314,7 +314,7 @@ export default function LandingPage() {
                 </div>
               </div>
               <h3 className="text-lg font-semibold mb-2">Start Learning</h3>
-              <p className="text-muted-foreground">
+              <p className="">
                 Access your personalized curriculum and begin your transformation journey.
               </p>
             </div>
@@ -327,7 +327,7 @@ export default function LandingPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Simple, Transparent Pricing</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl  max-w-2xl mx-auto">
               One low annual fee gives you access to all programs and resources.
             </p>
           </div>
@@ -412,13 +412,13 @@ export default function LandingPage() {
                 </div>
                 <span className="text-xl font-bold">SkillForge</span>
               </div>
-              <p className="text-muted-foreground">
+              <p className="">
                 Empowering professionals through structured apprenticeship programs.
               </p>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Programs</h3>
-              <ul className="space-y-2 text-muted-foreground">
+              <ul className="space-y-2">
                 <li>
                   <Link href="#" className="hover:text-foreground transition-colors">
                     Web Development
@@ -443,7 +443,7 @@ export default function LandingPage() {
             </div>
             <div>
               <h3 className="font-semibold mb-4">Support</h3>
-              <ul className="space-y-2 text-muted-foreground">
+              <ul className="space-y-2 ">
                 <li>
                   <Link href="#" className="hover:text-foreground transition-colors">
                     Help Center
@@ -468,7 +468,7 @@ export default function LandingPage() {
             </div>
             <div>
               <h3 className="font-semibold mb-4">Company</h3>
-              <ul className="space-y-2 text-muted-foreground">
+              <ul className="space-y-2 ">
                 <li>
                   <Link href="#" className="hover:text-foreground transition-colors">
                     About
@@ -492,7 +492,7 @@ export default function LandingPage() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
+          <div className="border-t border-border mt-8 pt-8 text-center">
             <p>&copy; 2024 SkillForge. All rights reserved.</p>
           </div>
         </div>

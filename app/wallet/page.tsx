@@ -39,7 +39,7 @@ export default function WalletPage() {
                 </div>
                 <span className="text-xl font-bold text-foreground">SkillForge</span>
               </Link>
-              <Link href="/dashboard" className="flex items-center text-muted-foreground hover:text-foreground">
+              <Link href="/dashboard" className="flex items-center hover:text-foreground">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Dashboard
               </Link>
@@ -53,7 +53,7 @@ export default function WalletPage() {
             <div className="flex items-center justify-between mb-8">
               <div>
                 <h1 className="text-3xl font-bold mb-2">Payment & Wallet</h1>
-                <p className="text-muted-foreground">Manage your payments and billing information</p>
+                <p className="text-black">Manage your payments and billing information</p>
               </div>
               <Button asChild>
                 <Link href="/payment">
@@ -80,18 +80,18 @@ export default function WalletPage() {
                         </div>
                         <div>
                           <h3 className="font-semibold">Annual Membership</h3>
-                          <p className="text-sm text-muted-foreground">Active until January 15, 2025</p>
+                          <p className="text-sm ">Active until January 15, 2025</p>
                         </div>
                       </div>
                       <Badge variant="secondary">Active</Badge>
                     </div>
                     <div className="mt-4 pt-4 border-t border-border">
                       <div className="flex items-center justify-between text-sm">
-                        <span className="text-muted-foreground">Next billing date</span>
+                        <span className="">Next billing date</span>
                         <span className="font-medium">January 15, 2025</span>
                       </div>
                       <div className="flex items-center justify-between text-sm mt-2">
-                        <span className="text-muted-foreground">Amount</span>
+                        <span className="">Amount</span>
                         <span className="font-medium">$30.00</span>
                       </div>
                     </div>
@@ -110,7 +110,7 @@ export default function WalletPage() {
                         <CreditCard className="w-5 h-5 text-secondary" />
                         <div>
                           <h3 className="font-medium">Visa ending in 1234</h3>
-                          <p className="text-sm text-muted-foreground">Expires 12/26</p>
+                          <p className="text-sm ">Expires 12/26</p>
                         </div>
                       </div>
                       <div className="flex items-center space-x-2">
@@ -158,7 +158,7 @@ export default function WalletPage() {
                             </div>
                             <div>
                               <h3 className="font-medium">{payment.description}</h3>
-                              <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                              <div className="flex items-center space-x-2 text-sm ">
                                 <Calendar className="w-3 h-3" />
                                 <span>{new Date(payment.date).toLocaleDateString()}</span>
                                 <span>•</span>
@@ -192,17 +192,17 @@ export default function WalletPage() {
                   <CardContent className="space-y-4">
                     <div className="text-center">
                       <div className="text-2xl font-bold text-secondary">$60</div>
-                      <div className="text-sm text-muted-foreground">Total Spent</div>
+                      <div className="">Total Spent</div>
                     </div>
                     <Separator />
                     <div className="text-center">
                       <div className="text-2xl font-bold text-secondary">2</div>
-                      <div className="text-sm text-muted-foreground">Years Active</div>
+                      <div className="">Years Active</div>
                     </div>
                     <Separator />
                     <div className="text-center">
                       <div className="text-2xl font-bold text-secondary">100%</div>
-                      <div className="text-sm text-muted-foreground">Payment Success</div>
+                      <div className="">Payment Success</div>
                     </div>
                   </CardContent>
                 </Card>
@@ -213,7 +213,7 @@ export default function WalletPage() {
                     <CardTitle>Need Help?</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3">
-                    <p className="text-sm text-muted-foreground">Have questions about billing or payments?</p>
+                    <p className="text-sm ">Have questions about billing or payments?</p>
                     <Button variant="outline" className="w-full bg-transparent">
                       Contact Support
                     </Button>
@@ -229,7 +229,7 @@ export default function WalletPage() {
                     <CardTitle>Refer Friends</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground mb-3">
+                    <p className="text-sm  mb-3">
                       Get 1 month free for each friend who joins SkillForge
                     </p>
                     <Button variant="secondary" className="w-full">

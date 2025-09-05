@@ -91,7 +91,7 @@ export default function ProgramsPage() {
           {/* Header */}
           <div className="mb-8">
             <h1 className="text-3xl font-bold mb-2">Your Programs</h1>
-            <p className="text-muted-foreground">
+            <p className="">
               Access your enrolled programs and explore new learning opportunities
             </p>
           </div>
@@ -121,18 +121,18 @@ export default function ProgramsPage() {
                       </div>
                     </CardHeader>
                     <CardContent className="space-y-4">
-                      <div className="flex items-center justify-between text-sm text-muted-foreground">
+                      <div className="flex items-center justify-between text-sm ">
                         <div className="flex items-center space-x-4">
-                          <div className="flex items-center space-x-1">
+                          <div className="flex items-center space-x-1 text-black">
                             <Clock className="w-4 h-4" />
                             <span>{program.duration}</span>
                           </div>
-                          <div className="flex items-center space-x-1">
+                          <div className="flex items-center space-x-1 text-black">
                             <BookOpen className="w-4 h-4" />
                             <span>{program.lessons} lessons</span>
                           </div>
                         </div>
-                        <div className="flex items-center space-x-1">
+                        <div className="flex items-center space-x-1 text-black">
                           <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                           <span>{program.rating}</span>
                         </div>
@@ -184,25 +184,25 @@ export default function ProgramsPage() {
                       </div>
                     </CardHeader>
                     <CardContent className="space-y-4">
-                      <div className="flex items-center justify-between text-sm text-muted-foreground">
+                      <div className="flex items-center justify-between text-sm">
                         <div className="flex items-center space-x-4">
-                          <div className="flex items-center space-x-1">
+                          <div className="flex items-center space-x-1 text-black">
                             <Clock className="w-4 h-4" />
                             <span>{program.duration}</span>
                           </div>
-                          <div className="flex items-center space-x-1">
+                          <div className="flex items-center space-x-1 text-black">
                             <Users className="w-4 h-4" />
                             <span>{program.students.toLocaleString()} students</span>
                           </div>
                         </div>
-                        <div className="flex items-center space-x-1">
+                        <div className="flex items-center space-x-1 text-black">
                           <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                           <span>{program.rating}</span>
                         </div>
                       </div>
-                      <div className="flex items-center justify-between text-sm">
-                        <span className="text-muted-foreground">Level: {program.level}</span>
-                        <span className="text-muted-foreground">{program.modules} modules</span>
+                      <div className="flex items-center justify-between text-sm text-black">
+                        <span className="">Level: {program.level}</span>
+                        <span className="">{program.modules} modules</span>
                       </div>
                       <Button variant="outline" className="w-full bg-transparent">
                         View Details

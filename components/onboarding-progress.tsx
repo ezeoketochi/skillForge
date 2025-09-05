@@ -41,9 +41,9 @@ export function OnboardingProgress({ steps, className }: OnboardingProgressProps
               ) : step.current ? (
                 <Clock className="w-4 h-4 text-secondary" />
               ) : (
-                <Lock className="w-4 h-4 text-muted-foreground" />
+                <Lock className="w-4 h-4 text-black" />
               )}
-              <span className={step.completed ? "text-foreground" : "text-muted-foreground"}>{step.title}</span>
+              <span className={step.completed ? "text-foreground" : "text-black"}>{step.title}</span>
             </div>
             {step.completed && (
               <Badge variant="outline" className="text-xs">

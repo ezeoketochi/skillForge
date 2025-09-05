@@ -26,7 +26,7 @@ export default function DashboardPage() {
             <div className="flex items-center justify-between h-16">
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                  <Award className="w-5 h-5 text-primary-foreground" />
+                  <Award className="w-5 h-5 " />
                 </div>
                 <span className="text-xl font-bold text-foreground">SkillForge</span>
               </div>
@@ -48,7 +48,7 @@ export default function DashboardPage() {
           {/* Welcome Section */}
           <div className="mb-8">
             <h1 className="text-3xl font-bold mb-2">Welcome back, John!</h1>
-            <p className="text-muted-foreground">
+            <p className="">
               {isOnboardingComplete
                 ? "Your account is fully set up. Continue your learning journey!"
                 : "Complete your setup to start your learning journey"}
@@ -62,7 +62,7 @@ export default function DashboardPage() {
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Complete Your Setup</h3>
-                    <p className="text-muted-foreground mb-4">
+                    <p className=" text-black mb-4">
                       Finish setting up your account to unlock all SkillForge features
                     </p>
                     <OnboardingProgress steps={onboardingSteps} />
@@ -89,7 +89,7 @@ export default function DashboardPage() {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-medium">Overall Progress</span>
-                    <span className="text-sm text-muted-foreground">1 of 3 completed</span>
+                    <span className="text-sm ">1 of 3 completed</span>
                   </div>
                   <Progress value={33} className="h-2" />
 
@@ -98,14 +98,14 @@ export default function DashboardPage() {
                     <div className="flex items-center justify-between p-4 border border-border rounded-lg">
                       <div className="flex items-center space-x-3">
                         <AlertCircle className="w-5 h-5 text-amber-500" />
-                        <div>
+                        <div className=" text-black">
                           <h3 className="font-medium">Verify Phone Number</h3>
-                          <p className="text-sm text-muted-foreground">Secure your account with phone verification</p>
+                          <p className="text-sm ">Secure your account with phone verification</p>
                         </div>
                       </div>
                       <Button size="sm" asChild>
                         <Link href="/verify-phone">
-                          <Phone className="w-4 h-4 mr-2" />
+                          <Phone className="w-4 h-4 mr-2  " />
                           Verify Now
                         </Link>
                       </Button>
@@ -117,7 +117,7 @@ export default function DashboardPage() {
                         <AlertCircle className="w-5 h-5 text-amber-500" />
                         <div>
                           <h3 className="font-medium">Upload Government ID</h3>
-                          <p className="text-sm text-muted-foreground">Verify your identity for program access</p>
+                          <p className="text-sm ">Verify your identity for program access</p>
                         </div>
                       </div>
                       <Button size="sm" variant="outline" asChild>
@@ -132,9 +132,9 @@ export default function DashboardPage() {
                     <div className="flex items-center justify-between p-4 border border-border rounded-lg">
                       <div className="flex items-center space-x-3">
                         <AlertCircle className="w-5 h-5 text-amber-500" />
-                        <div>
+                        <div className=" text-black">
                           <h3 className="font-medium">Complete Payment</h3>
-                          <p className="text-sm text-muted-foreground">Pay $30 annual fee to access all programs</p>
+                          <p className="text-sm ">Pay $30 annual fee to access all programs</p>
                         </div>
                       </div>
                       <Button size="sm" variant="outline" asChild>

@@ -20,7 +20,7 @@ export default function VerifyPhonePage() {
                 </div>
                 <span className="text-xl font-bold text-foreground">SkillForge</span>
               </Link>
-              <Link href="/dashboard" className="flex items-center text-muted-foreground hover:text-foreground">
+              <Link href="/dashboard" className="flex items-center  hover:text-foreground">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Dashboard
               </Link>
@@ -36,7 +36,7 @@ export default function VerifyPhonePage() {
                 <Phone className="w-8 h-8 text-secondary" />
               </div>
               <h1 className="text-2xl font-bold mb-2">Verify Your Phone Number</h1>
-              <p className="text-muted-foreground">
+              <p className=" text-black">
                 We'll send a verification code to your phone number to secure your account
               </p>
             </div>
@@ -52,7 +52,7 @@ export default function VerifyPhonePage() {
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone Number</Label>
                     <Input id="phone" type="tel" placeholder="+1 (555) 123-4567" defaultValue="+1234567890" required />
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-xs ">
                       We'll send a 6-digit verification code to this number
                     </p>
                   </div>
@@ -62,7 +62,7 @@ export default function VerifyPhonePage() {
                 </form>
 
                 {/* Verification Code Input (shown after sending code) */}
-                <div className="space-y-4 pt-4 border-t border-border">
+                <div className="space-y-4 pt-4 border-t border-border text-black">
                   <div className="space-y-2">
                     <Label htmlFor="code">Verification Code</Label>
                     <Input
@@ -70,9 +70,10 @@ export default function VerifyPhonePage() {
                       type="text"
                       placeholder="Enter 6-digit code"
                       maxLength={6}
-                      className="text-center text-lg tracking-widest"
+                      className="text-center text-lg tracking-widest placeholder-black"
+
                     />
-                    <p className="text-xs text-muted-foreground">Enter the 6-digit code sent to your phone</p>
+                    <p className="text-xs ">Enter the 6-digit code sent to your phone</p>
                   </div>
                   <Button className="w-full" variant="secondary">
                     Verify Phone Number
@@ -90,7 +91,7 @@ export default function VerifyPhonePage() {
                 <Shield className="w-5 h-5 text-secondary mt-0.5" />
                 <div>
                   <h3 className="font-medium text-sm mb-1">Why verify your phone?</h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
+                  <p className="text-xs  leading-relaxed">
                     Phone verification helps secure your account and enables important notifications about your
                     apprenticeship progress.
                   </p>

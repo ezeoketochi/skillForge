@@ -74,10 +74,10 @@ export default function VerifyIdPage() {
                 <div className="space-y-4">
                   <Label htmlFor="id-upload">Upload Document</Label>
                   <div className="border-2 border-dashed border-border rounded-lg p-8 text-center hover:border-secondary/50 transition-colors">
-                    <Upload className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
+                    <Upload className="w-12 h-12  mx-auto mb-4" />
                     <div className="space-y-2">
                       <p className="text-sm font-medium">Click to upload or drag and drop</p>
-                      <p className="text-xs text-muted-foreground">PNG, JPG, PDF up to 10MB</p>
+                      <p className="text-xs ">PNG, JPG, PDF up to 10MB</p>
                     </div>
                     <input id="id-upload" type="file" accept="image/*,.pdf" className="hidden" multiple={false} />
                     <Button className="mt-4" onClick={() => document.getElementById("id-upload")?.click()}>
@@ -134,7 +134,7 @@ export default function VerifyIdPage() {
                   <Shield className="w-6 h-6 text-secondary mt-0.5" />
                   <div className="space-y-2">
                     <h3 className="font-medium">Security & Privacy</h3>
-                    <div className="text-sm text-muted-foreground space-y-1">
+                    <div className="text-sm  space-y-1">
                       <p>• Your ID information is encrypted and stored securely</p>
                       <p>• We only use this information for identity verification</p>
                       <p>• Your document will be reviewed within 24-48 hours</p>

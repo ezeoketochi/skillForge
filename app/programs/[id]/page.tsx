@@ -136,14 +136,14 @@ export default function ProgramDetailPage({ params }: { params: { id: string } }
             {/* Program Header */}
             <div className="mb-8">
               <div className="flex items-start justify-between mb-4">
-                <div>
+                <div className=" text-black">
                   <h1 className="text-3xl font-bold mb-2">{program.title}</h1>
                   <p className="text-muted-foreground text-lg">{program.description}</p>
                 </div>
                 <Badge variant="secondary">Enrolled</Badge>
               </div>
 
-              <div className="flex items-center space-x-6 text-sm text-muted-foreground mb-6">
+              <div className="flex items-center space-x-6 text-sm mb-6">
                 <div className="flex items-center space-x-1">
                   <Clock className="w-4 h-4" />
                   <span>{program.duration}</span>
@@ -168,13 +168,13 @@ export default function ProgramDetailPage({ params }: { params: { id: string } }
                   <div className="flex items-center justify-between mb-4">
                     <div>
                       <h3 className="font-semibold">Your Progress</h3>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm ">
                         {completedLessons} of {totalLessons} lessons completed
                       </p>
                     </div>
                     <div className="text-right">
                       <div className="text-2xl font-bold text-secondary">{program.progress}%</div>
-                      <div className="text-sm text-muted-foreground">Complete</div>
+                      <div className="text-sm ">Complete</div>
                     </div>
                   </div>
                   <Progress value={program.progress} className="h-3" />
@@ -199,7 +199,7 @@ export default function ProgramDetailPage({ params }: { params: { id: string } }
                   </div>
                   <div>
                     <h3 className="font-semibold">{program.instructor}</h3>
-                    <p className="text-sm text-muted-foreground">{program.instructorTitle}</p>
+                    <p className="text-sm">{program.instructorTitle}</p>
                   </div>
                 </div>
               </CardContent>
@@ -219,7 +219,7 @@ export default function ProgramDetailPage({ params }: { params: { id: string } }
                         <div>
                           <CardTitle className="flex items-center space-x-2">
                             <span>{module.title}</span>
-                            {!module.isUnlocked && <Lock className="w-4 h-4 text-muted-foreground" />}
+                            {!module.isUnlocked && <Lock className="w-4 h-4 " />}
                           </CardTitle>
                           <CardDescription>{module.description}</CardDescription>
                         </div>
@@ -228,7 +228,7 @@ export default function ProgramDetailPage({ params }: { params: { id: string } }
                         <div className="text-sm font-medium">
                           {module.completed}/{module.lessons} lessons
                         </div>
-                        <div className="text-xs text-muted-foreground">{module.duration}</div>
+                        <div className="text-xs">{module.duration}</div>
                       </div>
                     </div>
                   </CardHeader>
@@ -255,7 +255,7 @@ export default function ProgramDetailPage({ params }: { params: { id: string } }
                                 )}
                                 <div>
                                   <h4 className="font-medium text-sm">{lesson.title}</h4>
-                                  <p className="text-xs text-muted-foreground">{lesson.duration}</p>
+                                  <p className="text-xs ">{lesson.duration}</p>
                                 </div>
                               </div>
                               <Button
@@ -273,7 +273,7 @@ export default function ProgramDetailPage({ params }: { params: { id: string } }
 
                     {!module.isUnlocked && (
                       <div className="pt-4">
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-sm">
                           Complete the previous module to unlock this content
                         </p>
                       </div>

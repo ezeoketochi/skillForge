@@ -31,7 +31,7 @@ export default function SuccessPage() {
 
             {/* Success Message */}
             <h1 className="text-4xl font-bold mb-4">Welcome to SkillForge!</h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-xl  mb-8">
               Your account is fully set up and your payment has been processed successfully. You now have access to all
               our apprenticeship programs.
             </p>
@@ -46,7 +46,7 @@ export default function SuccessPage() {
                       <BookOpen className="w-6 h-6 text-secondary" />
                     </div>
                     <h3 className="font-semibold mb-2">Explore Programs</h3>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm ">
                       Browse your enrolled programs and start learning immediately
                     </p>
                   </div>
@@ -55,7 +55,7 @@ export default function SuccessPage() {
                       <Users className="w-6 h-6 text-secondary" />
                     </div>
                     <h3 className="font-semibold mb-2">Join Community</h3>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm ">
                       Connect with fellow learners and get support from mentors
                     </p>
                   </div>
@@ -64,7 +64,7 @@ export default function SuccessPage() {
                       <Trophy className="w-6 h-6 text-secondary" />
                     </div>
                     <h3 className="font-semibold mb-2">Earn Certificates</h3>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm ">
                       Complete programs to earn industry-recognized certificates
                     </p>
                   </div>
@@ -93,7 +93,7 @@ export default function SuccessPage() {
             {/* Support */}
             <div className="mt-12 p-6 bg-card rounded-lg border border-border">
               <h3 className="font-semibold mb-2">Need Help Getting Started?</h3>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-sm mb-4">
                 Our support team is here to help you make the most of your SkillForge experience.
               </p>
               <Button variant="outline" size="sm" className="bg-transparent">

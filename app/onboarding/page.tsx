@@ -112,7 +112,7 @@ export default function OnboardingPage() {
                                 ? "bg-green-100 text-green-600"
                                 : isPending
                                   ? "bg-secondary/10 text-secondary"
-                                  : "bg-muted text-muted-foreground"
+                                  : "bg-muted  text-black"
                             }`}
                           >
                             {isCompleted ? <CheckCircle className="w-6 h-6" /> : <Icon className="w-6 h-6" />}
@@ -121,8 +121,8 @@ export default function OnboardingPage() {
                           {/* Step Content */}
                           <div>
                             <h3 className="text-lg font-semibold mb-1">{step.title}</h3>
-                            <p className="text-muted-foreground mb-2">{step.description}</p>
-                            <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                            <p className=" text-black mb-2">{step.description}</p>
+                            <div className="flex items-center space-x-2 text-sm ">
                               <Clock className="w-4 h-4" />
                               <span>{step.estimatedTime}</span>
                             </div>
