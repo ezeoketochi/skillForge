@@ -73,13 +73,13 @@ export default function OnboardingPage() {
             {/* Welcome Header */}
             <div className="text-center mb-12">
               <h1 className="text-4xl font-bold mb-4">Welcome to SkillForge!</h1>
-              <p className="text-xl text-muted-foreground mb-6">
+              <p className="text-xl mb-6">
                 Let's get your account set up so you can start your learning journey
               </p>
               <div className="space-y-2">
                 <div className="flex items-center justify-between text-sm">
                   <span className="font-medium">Setup Progress</span>
-                  <span className="text-muted-foreground">
+                  <span className="">
                     {completedSteps} of {totalSteps} completed
                   </span>
                 </div>
@@ -165,7 +165,7 @@ export default function OnboardingPage() {
                     <CheckCircle className="w-8 h-8 text-secondary" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Setup Complete!</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <p className=" mb-4">
                     Congratulations! Your account is fully set up and ready to go.
                   </p>
                   <Button size="lg" asChild>

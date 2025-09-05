@@ -17,7 +17,7 @@ export default function LoginPage() {
       <div className="w-full max-w-md">
         {/* Header */}
         <div className="text-center mb-8">
-          <Link href="/" className="inline-flex items-center text-muted-foreground hover:text-foreground mb-6">
+          <Link href="/" className="inline-flex items-center hover:text-foreground mb-6">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Home
           </Link>
@@ -28,7 +28,7 @@ export default function LoginPage() {
             <span className="text-2xl font-bold text-foreground">SkillForge</span>
           </div>
           <h1 className="text-2xl font-bold text-balance">Welcome Back</h1>
-          <p className="text-muted-foreground">Sign in to continue your learning journey</p>
+          <p className="">Sign in to continue your learning journey</p>
         </div>
 
         {/* Login Form */}

@@ -21,7 +21,7 @@ export default function VerifyIdPage() {
                 </div>
                 <span className="text-xl font-bold text-foreground">SkillForge</span>
               </Link>
-              <Link href="/dashboard" className="flex items-center text-muted-foreground hover:text-foreground">
+              <Link href="/dashboard" className="flex items-center hover:text-foreground">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Dashboard
               </Link>
@@ -37,7 +37,7 @@ export default function VerifyIdPage() {
                 <FileText className="w-8 h-8 text-secondary" />
               </div>
               <h1 className="text-2xl font-bold mb-2">Verify Your Identity</h1>
-              <p className="text-muted-foreground">
+              <p className="">
                 Upload a government-issued ID to verify your identity and access all program features
               </p>
             </div>

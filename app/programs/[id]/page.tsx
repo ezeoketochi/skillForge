@@ -93,6 +93,92 @@ const programData = {
       },
     ],
   },
+   "data-science": {
+  title: "Data Science Mastery",
+  description: "Master modern Data Science, Machine Learning, and AI with cutting-edge tools and technologies.",
+  duration: "12 weeks",
+  level: "Beginner to Advanced",
+  students: 980,
+  rating: 4.9,
+  progress: 15,
+  instructor: "Dr. Emily Carter",
+  instructorTitle: "Lead Data Scientist at Microsoft",
+  modules: [
+    {
+      id: 1,
+      title: "Python for Data Science",
+      description: "Learn Python fundamentals tailored for data analysis and manipulation.",
+      duration: "2 weeks",
+      lessons: 8,
+      completed: 6,
+      isUnlocked: true,
+      lessons_detail: [
+        { id: 1, title: "Python Basics & Syntax", duration: "45 min", completed: true },
+        { id: 2, title: "Data Structures in Python", duration: "60 min", completed: true },
+        { id: 3, title: "Working with Libraries (NumPy, Pandas)", duration: "75 min", completed: true },
+        { id: 4, title: "Data Cleaning & Preprocessing", duration: "90 min", completed: true },
+        { id: 5, title: "Data Visualization with Matplotlib & Seaborn", duration: "85 min", completed: true },
+        { id: 6, title: "Exploratory Data Analysis (EDA)", duration: "70 min", completed: true },
+        { id: 7, title: "Handling Missing Data", duration: "50 min", completed: false },
+        { id: 8, title: "Working with Dates & Times", duration: "65 min", completed: false },
+      ],
+    },
+    {
+      id: 2,
+      title: "Statistics & Probability",
+      description: "Core statistical concepts for analyzing and interpreting data.",
+      duration: "2 weeks",
+      lessons: 7,
+      completed: 3,
+      isUnlocked: true,
+      lessons_detail: [
+        { id: 1, title: "Descriptive Statistics", duration: "55 min", completed: true },
+        { id: 2, title: "Probability Fundamentals", duration: "65 min", completed: true },
+        { id: 3, title: "Distributions (Normal, Binomial, Poisson)", duration: "80 min", completed: true },
+        { id: 4, title: "Hypothesis Testing", duration: "70 min", completed: false },
+        { id: 5, title: "Confidence Intervals", duration: "50 min", completed: false },
+        { id: 6, title: "Correlation & Regression Basics", duration: "75 min", completed: false },
+        { id: 7, title: "Statistical Inference", duration: "90 min", completed: false },
+      ],
+    },
+    {
+      id: 3,
+      title: "Machine Learning Fundamentals",
+      description: "Understand and implement core ML algorithms.",
+      duration: "3 weeks",
+      lessons: 10,
+      completed: 0,
+      isUnlocked: false,
+    },
+    {
+      id: 4,
+      title: "Deep Learning & Neural Networks",
+      description: "Build and train neural networks with TensorFlow and PyTorch.",
+      duration: "2 weeks",
+      lessons: 8,
+      completed: 0,
+      isUnlocked: false,
+    },
+    {
+      id: 5,
+      title: "Data Engineering & Big Data",
+      description: "Learn how to handle large-scale datasets and pipelines.",
+      duration: "2 weeks",
+      lessons: 7,
+      completed: 0,
+      isUnlocked: false,
+    },
+    {
+      id: 6,
+      title: "Capstone Data Science Project",
+      description: "Apply everything you’ve learned to solve a real-world problem.",
+      duration: "1 week",
+      lessons: 5,
+      completed: 0,
+      isUnlocked: false,
+    },
+  ],
+},
 }
 
 // ✅ This tells Next which `[id]` pages to build
@@ -100,8 +186,10 @@ export async function generateStaticParams() {
   return Object.keys(programData).map((id) => ({ id }));
 }
 
-export default function ProgramDetailPage({ params }: { params: { id: string } }) {
-  const program = programData[params.id as keyof typeof programData]
+export default async function ProgramDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const program = programData[id as keyof typeof programData]
+
 
   if (!program) {
     return <div>Program not found</div>
@@ -123,7 +211,7 @@ export default function ProgramDetailPage({ params }: { params: { id: string } }
                 </div>
                 <span className="text-xl font-bold text-foreground">SkillForge</span>
               </Link>
-              <Link href="/programs" className="flex items-center text-muted-foreground hover:text-foreground">
+              <Link href="/programs" className="flex items-center  hover:text-foreground">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Programs
               </Link>
@@ -138,7 +226,7 @@ export default function ProgramDetailPage({ params }: { params: { id: string } }
               <div className="flex items-start justify-between mb-4">
                 <div className=" text-black">
                   <h1 className="text-3xl font-bold mb-2">{program.title}</h1>
-                  <p className="text-muted-foreground text-lg">{program.description}</p>
+                  <p className=" text-lg">{program.description}</p>
                 </div>
                 <Badge variant="secondary">Enrolled</Badge>
               </div>

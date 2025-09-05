@@ -39,7 +39,7 @@ export default function RegisterPage() {
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
-          <Link href="/" className="inline-flex items-center text-muted-foreground hover:text-foreground mb-6">
+          <Link href="/" className="inline-flex items-center hover:text-foreground mb-6">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Home
           </Link>
@@ -50,7 +50,7 @@ export default function RegisterPage() {
             <span className="text-2xl font-bold text-foreground">SkillForge</span>
           </div>
           <h1 className="text-2xl font-bold text-balance">Join SkillForge</h1>
-          <p className="text-muted-foreground">Start your professional development journey today</p>
+          <p className="">Start your professional development journey today</p>
         </div>
 
         {/* Registration Form */}
@@ -97,7 +97,7 @@ export default function RegisterPage() {
               {/* Areas of Interest */}
               <div className="space-y-4">
                 <h3 className="text-lg font-semibold">Areas of Interest</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm ">
                   Select the skills you're interested in learning (you can choose multiple)
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">

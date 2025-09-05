@@ -26,7 +26,7 @@ export function OnboardingProgress({ steps, className }: OnboardingProgressProps
     <div className={className}>
       <div className="flex items-center justify-between mb-2">
         <span className="text-sm font-medium">Setup Progress</span>
-        <span className="text-sm text-muted-foreground">
+        <span className="text-sm">
           {completedSteps} of {totalSteps} completed
         </span>
       </div>
